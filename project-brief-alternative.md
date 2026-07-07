@@ -7,11 +7,12 @@ I'm considering setting up a (mostly) automated document processing pipeline tha
 - send each file via API to an LLM and receive JSON metadata: model ID, summary, notes, A/B classification confidence, relevance rating, quality rating, list of topics, list of entities, processing status
 - convert JSON to CSV/SQL for database insertion
 
-*Response:*
-
 In my specific case class "A" will be business-related documents, including but not confined to: business ideas, proposals, client briefings, downloaded articles, drafts for business-related posts, statistics, reports.
 Class "B" will be creative writing-related documents: story ideas, outlines, single chapters, drafts, background material, critical analyses, meta-writing (writing about writing)
 Either class may contain transcrippts of chatbot dialogues.
+
+*Response:*
+
 This is a sensible architecture. Here's feedback on each stage plus some design decisions worth settling before you build.
 
 ## Pipeline order and metadata extraction
