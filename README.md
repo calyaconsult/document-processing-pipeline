@@ -43,6 +43,3 @@ Supports `--dry-run`, `--force` (reprocess all), and per-run budget caps.
 ## Status
 
 Pre-development. See the project brief for full specifications.
-
-## CLI
-
